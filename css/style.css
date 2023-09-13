@@ -631,14 +631,13 @@ color: rgba(226, 141, 8, 1);
   .format_btn{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
   .format_btn .btn{
-    width: 70%;
+    width: 50%;
     margin-bottom: 10px;
     margin-left: 0;
-    margin-right: 0;
+    margin-right: auto;
   }
   .format_btn .btn:last-child{
     margin-bottom: 0;
