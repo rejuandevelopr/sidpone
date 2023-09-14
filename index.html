@@ -31,7 +31,7 @@
     <section class="portrait_section">
         <div class="container_two">
             <div class="row">
-                <div class="col-lg-4 col-4 text-center">
+                <div class="col-lg-4 col-4 text-center" id="portraitColumn">
                     <div class="port_main">
                         <img class="img-fluid" src="./Order Materials/image 10.png" alt="Portraits Image">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,7 +45,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-4 text-center">
+                <div class="col-lg-4 col-4 text-center" id="facelessColumn">
                     <div style="display: inline-block;">
                         <img class="img-fluid" src="./Order Materials/image 11.png" alt="Portraits Image">
                         <div class="text-center portfolio_head">
@@ -55,7 +55,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-4 text-center">
+                <div class="col-lg-4 col-4 text-center" id="renaissanceColumn">
                     <div style="display: inline-block;">
                         <img class="img-fluid" src="./Order Materials/image 11.png" alt="Portraits Image">
                         <div class="text-center portfolio_head">
@@ -504,5 +504,33 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        // Get references to your column elements
+const portraitColumn = document.getElementById("portraitColumn");
+const facelessColumn = document.getElementById("facelessColumn");
+const renaissanceColumn = document.getElementById("renaissanceColumn");
+
+// Add click event listeners to each column
+portraitColumn.addEventListener("click", () => handleColumnClick(portraitColumn));
+facelessColumn.addEventListener("click", () => handleColumnClick(facelessColumn));
+renaissanceColumn.addEventListener("click", () => handleColumnClick(renaissanceColumn));
+
+// Function to handle column selection
+function handleColumnClick(clickedColumn) {
+    // Remove the "selected" class from all columns
+    portraitColumn.classList.remove("selected");
+    facelessColumn.classList.remove("selected");
+    renaissanceColumn.classList.remove("selected");
+
+    // Add the "selected" class to the clicked column
+    clickedColumn.classList.add("selected");
+}
+
+        
+
+
+    </script>
 </body>
 </html>

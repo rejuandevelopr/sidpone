@@ -65,6 +65,18 @@ line-height: 24px;
 letter-spacing: 0em;
 }
 
+.selected {
+  border: 3px solid rgba(33, 33, 33, 1);
+  border-radius: 32px;
+}
+
+.selected svg {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+
 /* Form */
 .form-label{
     font-family: Plus Jakarta Sans;
